@@ -1,0 +1,34 @@
+@import "reset.css";
+
+
+.hidden{
+    display: none;
+}
+
+
+
+/*로그인, 명언, 투두, 시계*/
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#clock, #greeting{
+    font-size: 30px;
+    color: white;
+}
+#quote{
+    position: absolute;
+    bottom: 20px;
+}
+
+/*배경*/
+img{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
