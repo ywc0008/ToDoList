@@ -9,7 +9,10 @@
   </head>
   <body>
     <!--날씨-->
-
+    <div id="weather">
+      <span><!--위치--></span>
+      <span><!--날씨 온도--></span>
+    </div>
     <!--시계 ㅇ-->
     <h2 id="clock">0시 00분 00초</h2>
     <!--로그인 ㅇ-->
@@ -19,12 +22,12 @@
     </form>
     <span id="greeting" class="hidden"></span>
     <!--할일 작성 폼-->
-    <form>
+    <form id="todo-form">
       <input required placeholder="오늘의 할일" type="text" />
       <button>등록</button>
     </form>
     <!--리스트-->
-    <ul></ul>
+    <ul id="todo"></ul>
     <!--랜덤 명언 ㅇ-->
     <div id="quote">
       <span></span>
@@ -36,5 +39,6 @@
     <script src="js/todo.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

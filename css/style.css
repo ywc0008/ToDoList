@@ -24,6 +24,14 @@ body{
     position: absolute;
     bottom: 20px;
 }
+/*날씨*/
+#weather{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 /*배경*/
 img{
