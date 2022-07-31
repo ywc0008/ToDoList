@@ -1,4 +1,8 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap');
+/*font-family: 'Dongle', sans-serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Nanum Pen Script', cursive;*/
 
 
 .hidden{
@@ -16,13 +20,49 @@ body{
     justify-content: center;
     align-items: center;
 }
-#clock, #greeting{
-    font-size: 30px;
+form{
+    width: 70%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form>input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    background: none;
+    text-align: center;
+}
+form>input:focus{
+    outline: none;
+    border: none;
+    text-align: center;
+
+
+}
+button{
+    border: none;
+    background: none;
+
+}
+#clock, #greeting, form>input::placeholder,form>button, form>input:focus{
+    font-family: 'Dongle', sans-serif;
     color: white;
+    font-size: 40px;
+}
+#clock, #greeting{
+    font-size: 80px;
 }
 #quote{
     position: absolute;
     bottom: 20px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 28px;
+    opacity: 0.8;
+    color: white;
+
+
 }
 /*날씨*/
 #weather{
@@ -31,6 +71,9 @@ body{
     right: 20px;
     display: flex;
     flex-direction: column;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    color: white;
 }
 
 /*배경*/
@@ -39,4 +82,11 @@ img{
     z-index: -1;
     height: 100%;
     width: 100%;
+}
+
+/*투두*/
+ul>li>span ,ul>li>button{
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
 }

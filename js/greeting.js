@@ -5,9 +5,12 @@ const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden";
 
 function paintgreeting(name) {
+  const toDoForm = document.querySelector("#todo-form");
+
   greeting.innerText = `안녕하세요 ${name}님`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
   loginForm.classList.add(HIDDEN_CLASSNAME);
+  toDoForm.classList.remove(HIDDEN_CLASSNAME);
 }
 
 function onloLoginSubmit(event) {
